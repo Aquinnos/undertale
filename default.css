@@ -7,6 +7,12 @@ body {
     background-image: url('./images/undertale.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 #main {
@@ -25,16 +31,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 
 #sans2 {
     display: none;
-    transform: scaleX(-1) 
+    transform: scaleX(-1);
+    width: 50rem;
 }
 
 #papyrus {
     display: none;
+    width: 35rem;
 }
 
 
@@ -44,6 +52,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 10rem;
 }
 
 #sec_flex1 {
@@ -52,51 +61,56 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 10rem;
 }
 
-@media screen and (max-width: 1000px) {
-    #main_flex {
-        display: flex;
-        flex-direction: column;
-    }
+.btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 1rem;
+    justify-content: center;
 }
-
 
 #but3, #but4 {
-    box-shadow: 3px 3px 5px rgb(73, 73, 73);
     background-color: green;
     color: rgb(230, 224, 224);
-    padding: 5px;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 0 1rem 1rem 0;
 }
 
-
-input[type='text'] {
-    border-radius: 10px;
-    outline: none;
-    background-color: #444;
-    border: none;
-    padding: 7px;
-    color: white;
-}
-
-input[type='text']::placeholder {
-    color: #999;
-    letter-spacing: 0.2em;
+#but3:hover, #but4:hover {
+    border: 1px solid black;
 }
 
 #sec_flex2 > p {
     font-size: large;
     color: blue;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
 }
 
 #sec_flex1 > p {
     color: red;
     font-size: large;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3rem;
+}
+
+input[type='text'] {
+    border-radius: 1rem 0 0 1rem;
+    background-color: #444;
+    border: 1px solid black;
+    padding: 0.5rem;
+    color: white;
+}
+
+input[type='text']::placeholder {
+    color: #999;
+    letter-spacing: 0.3em;
+}
+
+input[type='text']:focus {
+    outline: 1px solid black;
 }
  
 @keyframes ch_c {
@@ -109,4 +123,37 @@ input[type='text']::placeholder {
 @font-face {
     font-family: Undertale;
     src: url("./font/undertale.ttf");
+}
+
+@media screen and (max-width: 1000px) {
+    #main_flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sans {
+        width: 30rem;
+    }
+
+    #papyrus {
+        width: 25rem;
+    }
+
+    #sans2 {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sans {
+        width: 20rem;
+    }
+
+    #papyrus {
+        width: 15rem;
+    }
+
+    #sans2 {
+        width: 23rem;
+    }
 }
