@@ -1,5 +1,5 @@
-const image = document.getElementById("sans")
-const audio = document.getElementById("megalovania")
+var image = document.getElementById("sans")
+var audio = document.getElementById("megalovania")
 
 window.onload = function () {
     image.addEventListener("click", go);

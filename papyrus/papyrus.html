@@ -11,78 +11,8 @@
 <body>
     <div id="papyrus-gigachad">
         <img src="../images/papyrus.png" alt="papyrus" id="papyrus">
-        <audio src="Bonetrousle.mp3" id="bonetrousle"></audio>
+        <audio src="../music/Bonetrousle.mp3" id="bonetrousle"></audio>
+        <script src="papyrus.js"></script>
     </div>
-    <script>
-
-        const image = document.getElementById("papyrus")
-        const audio = document.getElementById("bonetrousle")
-      
-        image.addEventListener("click", () => {
-
-          audio.muted = false;
-          audio.play();
-          audio.currentTime = 0;
-          audio.volume = 0.5;
-
-          setTimeout(() => {
-            party1()
-          }, 6900);
-
-          setTimeout(() => {
-            party2();
-          }, 19500);
-
-          setTimeout(() => {
-            halucynki1();
-            party3();
-          }, 32300);
-
-          setTimeout(() => {
-            halucynki2();
-            party4();
-          }, 45000);
-
-          setTimeout(() => {
-            party1();
-            document.getElementById("papyrus-gigachad").style.animation = "none";
-          }, 51500);
-
-          setTimeout(() => {
-            document.getElementById("papyrus").style.animation = "none";
-            audio.muted = true;
-          }, 58000);
-
-
-          function party1() {
-            document.getElementById("papyrus").style.animation = "party 3s linear infinite";
-          }
-
-          function party2() {
-            document.getElementById("papyrus").style.animation = "party 1.5s linear infinite";
-          }
-
-          function party3() {
-            document.getElementById("papyrus").style.animation = "party 0.5s linear infinite";
-          }
-
-          function party4() {
-            document.getElementById("papyrus").style.animation = "party 0.2s linear infinite";
-          }
-
-          function halucynki1() {
-            document.getElementById("papyrus-gigachad").style.animation = "halucynki 0.3s linear infinite";
-          }
-
-          function halucynki2() {
-            document.getElementById("papyrus-gigachad").style.animation = "halucynki 0.1s linear infinite";
-          }
-
-          function animationNone() {
-            document.getElementById("papyrus-gigachad").style.animation = "none";
-            document.getElementById("papyrus").style.animation = "none";
-          }
-        })
-      </script>
 </body>
 </html>
