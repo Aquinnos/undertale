@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="default.css">
     <script src="search.js"></script>
     <script src="hover.js"></script>
+    <script src="music.js"></script>
     <title>Undertale</title>
 </head>
 <body>
+    <audio src="./overwritecompressed.mp3" id="audio"></audio>
     <section id="main">
         <main id="main_flex">
             <section class="sec_flex" id="sec_flex1">
@@ -33,6 +35,14 @@
             <img src="./images/sans2.png" alt="sans2" id="sans2" >
         </section>
     </section> 
+    <script>
+        const triggerElement = document.getElementById('main');
+        const audioElement = document.getElementById('audio');
+
+        triggerElement.addEventListener('mouseover', function() {
+            audioElement.play();
+        });
+      </script>
 </body>
 </body>
 </html>

@@ -9,80 +9,10 @@
     <link rel="shortcut icon" href="../images/sans.png" type="image/x-icon">
 </head>
 <body>
-    <div id="sans-gigachad">
-        <img src="../images/sans.png" alt="sans" id="sans">
-        <audio src="megalovania.mp3" id="megalovania"></audio>
-    </div>
-    <script>
-
-        const image = document.getElementById("sans")
-        const audio = document.getElementById("megalovania")
-      
-        image.addEventListener("click", () => {
-
-          audio.muted = false;
-          audio.play();
-          audio.volume = 0.5;
-          audio.currentTime = 0;
-
-          setTimeout(() => {
-            party1()
-          }, 16300);
-
-          setTimeout(() => {
-            halucynki1();
-            party2();
-          }, 32000);
-
-          setTimeout(() => {
-            halucynki2();
-            party3();
-          }, 40000);
-
-          setTimeout(() => {
-            halucynki3();
-            party4();
-          }, 48000);
-
-          setTimeout(() => {
-            animationNone();
-            audio.muted = true;
-          }, 80000);
-
-
-          function party1() {
-            document.getElementById("sans").style.animation = "party 3s linear infinite";
-          }
-
-          function party2() {
-            document.getElementById("sans").style.animation = "party 0.5s linear infinite";
-          }
-
-          function party3() {
-            document.getElementById("sans").style.animation = "party 0.3s linear infinite";
-          }
-
-          function party4() {
-            document.getElementById("sans").style.animation = "party 0.1s linear infinite";
-          }
-
-          function halucynki1() {
-            document.getElementById("sans-gigachad").style.animation = "halucynki 1s linear infinite";
-          }
-
-          function halucynki2() {
-            document.getElementById("sans-gigachad").style.animation = "halucynki 0.3s linear infinite";
-          }
-
-          function halucynki3() {
-            document.getElementById("sans-gigachad").style.animation = "halucynki 0.2s linear infinite";
-          }
-
-          function animationNone() {
-            document.getElementById("sans-gigachad").style.animation = "none";
-            document.getElementById("sans").style.animation = "none";
-          }
-        })
-      </script>
+  <div id="sans-gigachad">
+      <img src="../images/sans.png" alt="sans" id="sans">
+      <audio src="megalovania.mp3" id="megalovania"></audio>
+      <script src="sans.js"></script>
+  </div>
 </body>
 </html>
