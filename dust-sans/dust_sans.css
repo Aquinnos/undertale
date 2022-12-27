@@ -6,33 +6,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 body {
-    overflow: hidden;
+    margin: 0 auto;
 }
 
 #dust_sans {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
+    width: 200px;
 }
 
 
 
 @keyframes party {
     0% {
-        top: 10%;
-        left: 10%;
+        top: 50%;
+        left: 50%;
         transform: rotate(0deg);
-        transform: scale(100%);
     }
 
     20% {
-        top: 50%;
-        left: 50%;
+        top: 75%;
+        left: 10%;
         transform: rotate(72deg);
     }
 
@@ -55,9 +55,10 @@ body {
     }
 
     100% {
-        top: 10%;
-        left: 10%;
+        top: 50%;
+        left: 50%;
         transform: rotate(360deg);
+
     }
 }
 
@@ -76,5 +77,12 @@ body {
 
     100% {
         background-color: purple;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    #dust_sans {
+        width: 150px;
     }
 }

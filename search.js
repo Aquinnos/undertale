@@ -9,9 +9,11 @@ function search_papyrus() {
     search.toLowerCase();
     search.replace(/\s/g, ''); //usuwa wszystkie białe znaki ze stringa
 
-    if(search.toLowerCase() == "papyrus") {
+    if(search == "papyrus") {
         location.href = './papyrus/papyrus.html';
-    } 
+    } else {
+        location.href = 'error.html';
+    }
 }
 
 function search_sans() {
@@ -24,5 +26,8 @@ function search_sans() {
         location.href = './sans/sans.html';
     } else if(search == "dust sans") {
         location.href = './dust-sans/dust_sans.html';
+    } else {
+        location.href = 'error.html';
     }
+
 }

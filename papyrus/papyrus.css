@@ -2,18 +2,21 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0 auto;
+}
+
 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     position: relative;
     width: 100%;
-    height: 98.5vh;
+    height: 100vh;
 }
 
 #papyrus {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
 }
 
 @keyframes party {
@@ -24,7 +27,7 @@ div {
 
     10% {
         top: 20%;
-        left: 5%;
+        left: 0%;
     }
 
     20% {
@@ -34,7 +37,7 @@ div {
     
     30% {
         top: 50%;
-        left: 5%;
+        left: 0%;
     }
 
     40% {
@@ -59,7 +62,7 @@ div {
 
     80% {
         top: 30%;
-        left: 5%;
+        left: 0%;
     }
 
     90% {

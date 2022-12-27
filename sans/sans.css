@@ -2,19 +2,23 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0 auto;
+}
+
 div {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
-    height: 98.5vh;
+    height: 100vh;
 }
 
 #sans {
     cursor: pointer;
-    position: absolute;
-    width: 30rem;
+    position: fixed;
+    width: 20rem;
 }
 
 @keyframes party {
@@ -64,5 +68,11 @@ div {
 
     100% {
         background-color: red;
+    }
+}
+
+@media (max-width: 1000px) {
+    #sans {
+        width: 15rem;
     }
 }

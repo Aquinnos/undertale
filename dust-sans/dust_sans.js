@@ -18,7 +18,7 @@ function go() {
             setTimeout(() => {
                 party1()
                 halucynki1()
-            }, 16800);
+            }, 1600);
 
             setTimeout(() => {
                 halucynki2();
