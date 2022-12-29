@@ -6,7 +6,7 @@
 body {
     margin: 0 auto;
     overflow: hidden;
-    background-image: url('../images/undertale.jpg');
+    background-image: url('../img/undertale.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(0.5rem);
@@ -34,7 +34,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15rem;
+    margin-top: 5rem;
+    height: 100%;
 }
 
 #sans2 {

@@ -25,6 +25,8 @@ button_papyrus.addEventListener('click', function() {
 
   if (value === 'papyrus') {
     location.href = '../../html/papyrus.html';
+  } else if (value === 'emerald papyrus' || value === 'emeraldpapyrus') {
+    location.href = '../../html/emerald_papyrus.html';
   } else {
     location.href = '../../html/error.html';
   }
