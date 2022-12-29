@@ -18,11 +18,11 @@ function go() {
             setTimeout(() => {
                 party1()
                 halucynki1()
-            }, 1600);
+            }, 16800);
 
             setTimeout(() => {
                 halucynki2();
-                party3();
+                party4();
                 audio.volume = 1;
             }, 44400);
 

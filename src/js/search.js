@@ -6,11 +6,11 @@ button_sans.addEventListener('click', function() {
   const value = input_sans.value.toLowerCase().trim();
 
   if (value === 'dust sans' || value === 'dustsans') {
-    location.href = '../../html/dust_sans.html';
+    location.href = '../../src/html/dust_sans.html';
   } else if (value === 'sans') {
-    location.href = '../../html/sans.html';
+    location.href = '../../src/html/sans.html';
   } else {
-    location.href = '../../html/error.html';
+    location.href = '../../src/html/error.html';
   }
 });
 
@@ -24,10 +24,10 @@ button_papyrus.addEventListener('click', function() {
   const value = input_papyrus.value.toLowerCase().trim();
 
   if (value === 'papyrus') {
-    location.href = '../../html/papyrus.html';
+    location.href = '../../src/html/papyrus.html';
   } else if (value === 'emerald papyrus' || value === 'emeraldpapyrus') {
-    location.href = '../../html/emerald_papyrus.html';
+    location.href = '../../src/html/emerald_papyrus.html';
   } else {
-    location.href = '../../html/error.html';
+    location.href = '../../src/html/error.html';
   }
 });
