@@ -26,7 +26,7 @@ button_papyrus.addEventListener('click', function() {
   if (value === 'papyrus') {
     location.href = '../../src/html/papyrus.html';
   } else if (value === 'emerald papyrus' || value === 'emeraldpapyrus') {
-    location.href = '../../src/html/emerald_papyrus.html';
+    location.href = '../undertale/src/html/emerald_papyrus.html';
   } else {
     location.href = '../../src/html/error.html';
   }
