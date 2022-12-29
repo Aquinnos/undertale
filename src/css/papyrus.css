@@ -17,6 +17,7 @@ div {
 #papyrus {
     cursor: pointer;
     position: fixed;
+    width: 20rem;
 }
 
 @keyframes party {
@@ -91,5 +92,11 @@ div {
 
     100% {
         background-color: black;
+    }
+}
+
+@media (max-width: 1000px) {
+    #papyrus {
+        width: 15rem;
     }
 }

@@ -7,7 +7,6 @@ function hover() {
     document.getElementById("sans").style.display = "none";
     document.getElementById("sans2").style.display = "block";
     document.getElementById("papyrus").style.display = "block";
-
 }
 
 function nonHover() {

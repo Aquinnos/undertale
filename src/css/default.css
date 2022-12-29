@@ -6,9 +6,10 @@
 body {
     margin: 0 auto;
     overflow: hidden;
-    background-image: url('./images/undertale.jpg');
+    background-image: url('../images/undertale.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    backdrop-filter: blur(0.5rem);
 }
 
 html {
@@ -20,6 +21,8 @@ html {
     flex-direction: column;
     height: 100vh;
     width: auto;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 #main_flex {
@@ -71,7 +74,7 @@ html {
     justify-content: center;
 }
 
-#but3, #but4 {
+#but1, #but2 {
     background-color: green;
     color: rgb(230, 224, 224);
     padding: 0.5rem;
@@ -79,7 +82,7 @@ html {
     border-radius: 0 7px 7px 0;
 }
 
-#but3:hover, #but4:hover {
+#but1:hover, #but2:hover {
     border: 1px solid black;
 }
 
@@ -121,7 +124,7 @@ input[type='text']:focus {
 
 @font-face {
     font-family: Undertale;
-    src: url("./font/undertale.ttf");
+    src: url("../font/undertale.ttf");
 }
 
 @media screen and (max-width: 1000px) {

@@ -4,46 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="default.css">
-    <link rel="shortcut icon" href="./images/dodole_sphere.png" type="image/x-icon">
-    <script src="search.js"></script>
-    <script src="hover.js"></script>
+    <link rel="stylesheet" href="./src/css/default.css">
+    <link rel="shortcut icon" href="./src/images/dodole_sphere.png" type="image/x-icon">
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
     <title>Undertale</title>
 </head>
 <body>
-    <audio src="./music/overwritecompressed.mp3" id="audio"></audio>
+    <audio src="./src/music/overwritecompressed.mp3" id="audio"></audio>
     <section id="main">
         <main id="main_flex">
-            <section class="sec_flex" id="sec_flex1">
+            <section class="sec_flex" id="sec_flex1" data-aos="fade-right" data-aos-delay="500" data-aos-once="true">
                 <p>Wpisz papyrus</p>
                 <section class="btn">
-                    <input type="text" placeholder="Szukaj" id="search_papyrus">
-                    <input type="button" value="Dotknij" id="but4" onclick="search_papyrus()">
+                    <input type="text" placeholder="Szukaj" id="search_papyrus" >
+                    <input type="submit" value="Dotknij" id="but1">
                 </section>
             </section>
-            <section class="sec_flex" id="sec_flex2">
+            <section class="sec_flex" id="sec_flex2" data-aos="fade-left" data-aos-delay="800" data-aos-once="true">
                 <p>Wpisz sans</p>
                 <section class="btn">
-                    <input type="text" placeholder="Szukaj" id="search_sans">
-                    <input type="button" value="Dotknij" id="but3" onclick="search_sans()">
+                        <input type="text" placeholder="Szukaj" id="search_sans">
+                        <input type="button" value="Dotknij" id="but2">
                 </section>
             </section>
         </main>
         <section id="sans_flex">
-            <img src="./images/sans.png" alt="sans" id="sans">
-            <img src="./images/papyrus.webp" alt="papyrus" id="papyrus">
-            <img src="./images/sans2.png" alt="sans2" id="sans2" >
+            <img src="./src/images/sans.png" alt="sans" id="sans" data-aos="fade-up" data-aos-delay="1100" data-aos-once="true">
+            <img src="./src/images/papyrus.webp" alt="papyrus" id="papyrus">
+            <img src="./src/images/sans2.png" alt="sans2" id="sans2" >
         </section>
     </section> 
-    <script>
-        const triggerElement = document.getElementById('main');
-        const audioElement = document.getElementById('audio');
-      
-        triggerElement.addEventListener('mouseenter', function() {
-          audioElement.play();
-          audioElement.loop;
-        });
-      </script>
+    <script src="./src/js/audio.js"></script>
+    <script src="./src/js/search.js"></script>
+    <script src="./src/js/hover.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script src="./src/js/aos.js"></script>
 </body>
 </body>
 </html>
